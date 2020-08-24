@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Entity\Home;
 use App\Repository\HomeRepository;
+use App\Repository\PresentationHomeRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -12,12 +12,14 @@ class HomeController extends AbstractController
     /**
      * @Route("/home", name="home")
      */
-    public function index(HomeRepository $repo)
+    public function index(HomeRepository $repo,PresentationHomeRepository $presentationRepo)
     {
         $home = $repo->find(1);
+        $presentationHome = $presentationRepo->findAll();
 
         return $this->render('home/home.html.twig', [
-            'home'  =>  $home
+            'home'  =>  $home,
+            'presentationHome'  =>  $presentationHome
         ]);
     }
 }

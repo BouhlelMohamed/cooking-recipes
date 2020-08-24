@@ -108,108 +108,210 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     </head>
     <body>
+
+    <!-- header-start -->
+    <header>
+        <div class=\"header-area \">
+            <div id=\"sticky-header\" class=\"main-header-area \">
+                <div class=\"container\">
+                    <div class=\"row align-items-center\">
+                        <div class=\"col-xl-3 col-lg-2\">
+                            <div class=\"logo\">
+                                <a href=\"index.html\">
+                                    <img src=\"img/logo.png\" alt=\"\">
+                                </a>
+                            </div>
+                        </div>
+                        <div class=\"col-xl-6 col-lg-7\">
+                            <div class=\"main-menu   d-none d-lg-block\">
+                                <nav>
+                                    <ul id=\"navigation\">
+                                        <li><a href=\"index.html\">home</a></li>
+                                        <li><a href=\"about.html\">about</a></li>
+                                        <li><a href=\"Recipes.html\">Recipes</a></li>
+                                        <li><a href=\"#\">blog <i class=\"ti-angle-down\"></i></a>
+                                            <ul class=\"submenu\">
+                                                <li><a href=\"blog.html\">blog</a></li>
+                                                <li><a href=\"single-blog.html\">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=\"#\">pages <i class=\"ti-angle-down\"></i></a>
+                                            <ul class=\"submenu\">
+                                                <li><a href=\"recipes_details.html\">Recipes Details</a></li>
+                                                <li><a href=\"elements.html\">elements</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=\"contact.html\">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class=\"col-xl-3 col-lg-3 d-none d-lg-block\">
+                            <div class=\"search_icon\">
+                                <a href=\"#\">
+                                    <i class=\"ti-search\"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=\"col-12\">
+                            <div class=\"mobile_menu d-block d-lg-none\"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
         ";
-        // line 23
+        // line 79
         $this->displayBlock('body', $context, $blocks);
-        // line 25
-        echo "        ";
+        // line 81
+        echo "
+        <!-- footer  -->
+        <footer class=\"footer\">
+                <div class=\"copy-right_text\">
+                    <div class=\"container\">
+                        <div class=\"footer_border\"></div>
+                        <div class=\"row align-items-center\">
+                            <div class=\"col-xl-8 col-md-8\">
+                                <p class=\"copy_right\">
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> by <a href=\"https://colorlib.com\" target=\"_blank\">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div>
+                            <div class=\"col-xl-4 col-md-4\">
+                                <div class=\"socail_links\">
+                                    <ul>
+                                        <li>
+                                            <a href=\"#\">
+                                                <i class=\"ti-facebook\"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=\"#\">
+                                                <i class=\"ti-twitter-alt\"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=\"#\">
+                                                <i class=\"fa fa-dribbble\"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=\"#\">
+                                                <i class=\"fa fa-behance\"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!--/ footer  -->
+        ";
+        // line 126
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 26
+        // line 127
         echo "        <!-- JS here -->
         <script src=\"";
-        // line 27
+        // line 128
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/vendor/modernizr-3.5.0.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 28
+        // line 129
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/vendor/jquery-1.12.4.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 29
+        // line 130
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/popper.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 30
+        // line 131
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 31
+        // line 132
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/owl.carousel.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 32
+        // line 133
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/isotope.pkgd.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 33
+        // line 134
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/ajax-form.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 34
+        // line 135
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/waypoints.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 35
+        // line 136
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.counterup.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 36
+        // line 137
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/imagesloaded.pkgd.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 37
+        // line 138
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/scrollIt.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 38
+        // line 139
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.scrollUp.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 39
+        // line 140
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/wow.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 40
+        // line 141
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/nice-select.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 41
+        // line 142
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.slicknav.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 42
+        // line 143
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.magnific-popup.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 43
+        // line 144
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/plugins.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 44
+        // line 145
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/gijgo.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 45
+        // line 146
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/contact.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 46
+        // line 147
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.ajaxchimp.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 47
+        // line 148
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.form.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 48
+        // line 149
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.validate.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 49
+        // line 150
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/mail-script.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 50
+        // line 151
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/main.js"), "html", null, true);
         echo "\"></script>
     </body>
@@ -260,7 +362,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 23
+    // line 79
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -270,7 +372,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 24
+        // line 80
         echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -280,7 +382,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 25
+    // line 126
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -310,7 +412,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     public function getDebugInfo()
     {
-        return array (  284 => 25,  274 => 24,  264 => 23,  246 => 6,  227 => 5,  213 => 50,  209 => 49,  205 => 48,  201 => 47,  197 => 46,  193 => 45,  189 => 44,  185 => 43,  181 => 42,  177 => 41,  173 => 40,  169 => 39,  165 => 38,  161 => 37,  157 => 36,  153 => 35,  149 => 34,  145 => 33,  141 => 32,  137 => 31,  133 => 30,  129 => 29,  125 => 28,  121 => 27,  118 => 26,  115 => 25,  113 => 23,  106 => 19,  102 => 18,  98 => 17,  94 => 16,  90 => 15,  86 => 14,  82 => 13,  78 => 12,  74 => 11,  70 => 10,  66 => 9,  62 => 8,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  386 => 126,  376 => 80,  366 => 79,  348 => 6,  329 => 5,  315 => 151,  311 => 150,  307 => 149,  303 => 148,  299 => 147,  295 => 146,  291 => 145,  287 => 144,  283 => 143,  279 => 142,  275 => 141,  271 => 140,  267 => 139,  263 => 138,  259 => 137,  255 => 136,  251 => 135,  247 => 134,  243 => 133,  239 => 132,  235 => 131,  231 => 130,  227 => 129,  223 => 128,  220 => 127,  218 => 126,  171 => 81,  169 => 79,  106 => 19,  102 => 18,  98 => 17,  94 => 16,  90 => 15,  86 => 14,  82 => 13,  78 => 12,  74 => 11,  70 => 10,  66 => 9,  62 => 8,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -337,8 +439,109 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     </head>
     <body>
+
+    <!-- header-start -->
+    <header>
+        <div class=\"header-area \">
+            <div id=\"sticky-header\" class=\"main-header-area \">
+                <div class=\"container\">
+                    <div class=\"row align-items-center\">
+                        <div class=\"col-xl-3 col-lg-2\">
+                            <div class=\"logo\">
+                                <a href=\"index.html\">
+                                    <img src=\"img/logo.png\" alt=\"\">
+                                </a>
+                            </div>
+                        </div>
+                        <div class=\"col-xl-6 col-lg-7\">
+                            <div class=\"main-menu   d-none d-lg-block\">
+                                <nav>
+                                    <ul id=\"navigation\">
+                                        <li><a href=\"index.html\">home</a></li>
+                                        <li><a href=\"about.html\">about</a></li>
+                                        <li><a href=\"Recipes.html\">Recipes</a></li>
+                                        <li><a href=\"#\">blog <i class=\"ti-angle-down\"></i></a>
+                                            <ul class=\"submenu\">
+                                                <li><a href=\"blog.html\">blog</a></li>
+                                                <li><a href=\"single-blog.html\">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=\"#\">pages <i class=\"ti-angle-down\"></i></a>
+                                            <ul class=\"submenu\">
+                                                <li><a href=\"recipes_details.html\">Recipes Details</a></li>
+                                                <li><a href=\"elements.html\">elements</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=\"contact.html\">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class=\"col-xl-3 col-lg-3 d-none d-lg-block\">
+                            <div class=\"search_icon\">
+                                <a href=\"#\">
+                                    <i class=\"ti-search\"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=\"col-12\">
+                            <div class=\"mobile_menu d-block d-lg-none\"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
         {% block body %}
         {% endblock %}
+
+        <!-- footer  -->
+        <footer class=\"footer\">
+                <div class=\"copy-right_text\">
+                    <div class=\"container\">
+                        <div class=\"footer_border\"></div>
+                        <div class=\"row align-items-center\">
+                            <div class=\"col-xl-8 col-md-8\">
+                                <p class=\"copy_right\">
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> by <a href=\"https://colorlib.com\" target=\"_blank\">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div>
+                            <div class=\"col-xl-4 col-md-4\">
+                                <div class=\"socail_links\">
+                                    <ul>
+                                        <li>
+                                            <a href=\"#\">
+                                                <i class=\"ti-facebook\"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=\"#\">
+                                                <i class=\"ti-twitter-alt\"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=\"#\">
+                                                <i class=\"fa fa-dribbble\"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=\"#\">
+                                                <i class=\"fa fa-behance\"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!--/ footer  -->
         {% block javascripts %}{% endblock %}
         <!-- JS here -->
         <script src=\"{{ asset('js/vendor/modernizr-3.5.0.min.js') }}\"></script>
