@@ -126,22 +126,16 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
                             <div class=\"main-menu   d-none d-lg-block\">
                                 <nav>
                                     <ul id=\"navigation\">
-                                        <li><a href=\"index.html\">home</a></li>
-                                        <li><a href=\"about.html\">about</a></li>
-                                        <li><a href=\"Recipes.html\">Recipes</a></li>
+                                    ";
+        // line 41
+        echo twig_escape_filter($this->env, (isset($context["navbar"]) || array_key_exists("navbar", $context) ? $context["navbar"] : (function () { throw new RuntimeError('Variable "navbar" does not exist.', 41, $this->source); })()), "html", null, true);
+        echo "
                                         <li><a href=\"#\">blog <i class=\"ti-angle-down\"></i></a>
                                             <ul class=\"submenu\">
                                                 <li><a href=\"blog.html\">blog</a></li>
                                                 <li><a href=\"single-blog.html\">single-blog</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href=\"#\">pages <i class=\"ti-angle-down\"></i></a>
-                                            <ul class=\"submenu\">
-                                                <li><a href=\"recipes_details.html\">Recipes Details</a></li>
-                                                <li><a href=\"elements.html\">elements</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href=\"contact.html\">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -165,9 +159,9 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
     <!-- header-end -->
 
         ";
-        // line 79
+        // line 70
         $this->displayBlock('body', $context, $blocks);
-        // line 81
+        // line 72
         echo "
         <!-- footer  -->
         <footer class=\"footer\">
@@ -214,104 +208,104 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
             </footer>
         <!--/ footer  -->
         ";
-        // line 126
+        // line 117
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 127
+        // line 118
         echo "        <!-- JS here -->
         <script src=\"";
-        // line 128
+        // line 119
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/vendor/modernizr-3.5.0.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 129
+        // line 120
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/vendor/jquery-1.12.4.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 130
+        // line 121
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/popper.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 131
+        // line 122
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 132
+        // line 123
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/owl.carousel.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 133
+        // line 124
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/isotope.pkgd.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 134
+        // line 125
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/ajax-form.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 135
+        // line 126
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/waypoints.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 136
+        // line 127
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.counterup.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 137
+        // line 128
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/imagesloaded.pkgd.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 138
+        // line 129
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/scrollIt.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 139
+        // line 130
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.scrollUp.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 140
+        // line 131
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/wow.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 141
+        // line 132
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/nice-select.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 142
+        // line 133
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.slicknav.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 143
+        // line 134
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.magnific-popup.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 144
+        // line 135
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/plugins.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 145
+        // line 136
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/gijgo.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 146
+        // line 137
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/contact.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 147
+        // line 138
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.ajaxchimp.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 148
+        // line 139
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.form.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 149
+        // line 140
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.validate.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 150
+        // line 141
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/mail-script.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 151
+        // line 142
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/main.js"), "html", null, true);
         echo "\"></script>
     </body>
@@ -362,7 +356,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 79
+    // line 70
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -372,7 +366,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 80
+        // line 71
         echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -382,7 +376,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 126
+    // line 117
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -412,7 +406,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     public function getDebugInfo()
     {
-        return array (  386 => 126,  376 => 80,  366 => 79,  348 => 6,  329 => 5,  315 => 151,  311 => 150,  307 => 149,  303 => 148,  299 => 147,  295 => 146,  291 => 145,  287 => 144,  283 => 143,  279 => 142,  275 => 141,  271 => 140,  267 => 139,  263 => 138,  259 => 137,  255 => 136,  251 => 135,  247 => 134,  243 => 133,  239 => 132,  235 => 131,  231 => 130,  227 => 129,  223 => 128,  220 => 127,  218 => 126,  171 => 81,  169 => 79,  106 => 19,  102 => 18,  98 => 17,  94 => 16,  90 => 15,  86 => 14,  82 => 13,  78 => 12,  74 => 11,  70 => 10,  66 => 9,  62 => 8,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  380 => 117,  370 => 71,  360 => 70,  342 => 6,  323 => 5,  309 => 142,  305 => 141,  301 => 140,  297 => 139,  293 => 138,  289 => 137,  285 => 136,  281 => 135,  277 => 134,  273 => 133,  269 => 132,  265 => 131,  261 => 130,  257 => 129,  253 => 128,  249 => 127,  245 => 126,  241 => 125,  237 => 124,  233 => 123,  229 => 122,  225 => 121,  221 => 120,  217 => 119,  214 => 118,  212 => 117,  165 => 72,  163 => 70,  131 => 41,  106 => 19,  102 => 18,  98 => 17,  94 => 16,  90 => 15,  86 => 14,  82 => 13,  78 => 12,  74 => 11,  70 => 10,  66 => 9,  62 => 8,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -457,22 +451,13 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
                             <div class=\"main-menu   d-none d-lg-block\">
                                 <nav>
                                     <ul id=\"navigation\">
-                                        <li><a href=\"index.html\">home</a></li>
-                                        <li><a href=\"about.html\">about</a></li>
-                                        <li><a href=\"Recipes.html\">Recipes</a></li>
+                                    {{ navbar }}
                                         <li><a href=\"#\">blog <i class=\"ti-angle-down\"></i></a>
                                             <ul class=\"submenu\">
                                                 <li><a href=\"blog.html\">blog</a></li>
                                                 <li><a href=\"single-blog.html\">single-blog</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href=\"#\">pages <i class=\"ti-angle-down\"></i></a>
-                                            <ul class=\"submenu\">
-                                                <li><a href=\"recipes_details.html\">Recipes Details</a></li>
-                                                <li><a href=\"elements.html\">elements</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href=\"contact.html\">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
