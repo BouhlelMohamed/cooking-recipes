@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\NavbarRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -33,9 +35,14 @@ class Navbar
     private $orderNumber;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\ManyToMany(targetEntity=ItemNavbar::class, mappedBy="navbar")
      */
-    private $color;
+    private $itemNavbars;
+
+    public function __construct()
+    {
+        $this->itemNavbars = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -78,14 +85,30 @@ class Navbar
         return $this;
     }
 
-    public function getColor(): ?string
+    /**
+     * @return Collection|ItemNavbar[]
+     */
+    public function getItemNavbars(): Collection
     {
-        return $this->color;
+        return $this->itemNavbars;
     }
 
-    public function setColor(?string $color): self
+    public function addItemNavbar(ItemNavbar $itemNavbar): self
     {
-        $this->color = $color;
+        if (!$this->itemNavbars->contains($itemNavbar)) {
+            $this->itemNavbars[] = $itemNavbar;
+            $itemNavbar->addNavbar($this);
+        }
+
+        return $this;
+    }
+
+    public function removeItemNavbar(ItemNavbar $itemNavbar): self
+    {
+        if ($this->itemNavbars->contains($itemNavbar)) {
+            $this->itemNavbars->removeElement($itemNavbar);
+            $itemNavbar->removeNavbar($this);
+        }
 
         return $this;
     }

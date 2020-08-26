@@ -109,203 +109,116 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
     </head>
     <body>
 
-    <!-- header-start -->
-    <header>
-        <div class=\"header-area \">
-            <div id=\"sticky-header\" class=\"main-header-area \">
-                <div class=\"container\">
-                    <div class=\"row align-items-center\">
-                        <div class=\"col-xl-3 col-lg-2\">
-                            <div class=\"logo\">
-                                <a href=\"index.html\">
-                                    <img src=\"img/logo.png\" alt=\"\">
-                                </a>
-                            </div>
-                        </div>
-                        <div class=\"col-xl-6 col-lg-7\">
-                            <div class=\"main-menu   d-none d-lg-block\">
-                                <nav>
-                                    <ul id=\"navigation\">
-                                    ";
-        // line 41
-        echo twig_escape_filter($this->env, (isset($context["navbar"]) || array_key_exists("navbar", $context) ? $context["navbar"] : (function () { throw new RuntimeError('Variable "navbar" does not exist.', 41, $this->source); })()), "html", null, true);
-        echo "
-                                        <li><a href=\"#\">blog <i class=\"ti-angle-down\"></i></a>
-                                            <ul class=\"submenu\">
-                                                <li><a href=\"blog.html\">blog</a></li>
-                                                <li><a href=\"single-blog.html\">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class=\"col-xl-3 col-lg-3 d-none d-lg-block\">
-                            <div class=\"search_icon\">
-                                <a href=\"#\">
-                                    <i class=\"ti-search\"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class=\"col-12\">
-                            <div class=\"mobile_menu d-block d-lg-none\"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
-
         ";
-        // line 70
+        // line 24
+        $this->loadTemplate("base/navbar.html.twig", "base.html.twig", 24)->display($context);
+        // line 25
+        echo "            ";
         $this->displayBlock('body', $context, $blocks);
-        // line 72
+        // line 27
+        echo "        ";
+        $this->loadTemplate("base/footer.html.twig", "base.html.twig", 27)->display($context);
+        // line 28
         echo "
-        <!-- footer  -->
-        <footer class=\"footer\">
-                <div class=\"copy-right_text\">
-                    <div class=\"container\">
-                        <div class=\"footer_border\"></div>
-                        <div class=\"row align-items-center\">
-                            <div class=\"col-xl-8 col-md-8\">
-                                <p class=\"copy_right\">
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> by <a href=\"https://colorlib.com\" target=\"_blank\">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                </p>
-                            </div>
-                            <div class=\"col-xl-4 col-md-4\">
-                                <div class=\"socail_links\">
-                                    <ul>
-                                        <li>
-                                            <a href=\"#\">
-                                                <i class=\"ti-facebook\"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"#\">
-                                                <i class=\"ti-twitter-alt\"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"#\">
-                                                <i class=\"fa fa-dribbble\"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"#\">
-                                                <i class=\"fa fa-behance\"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        <!--/ footer  -->
         ";
-        // line 117
+        // line 29
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 118
+        // line 30
         echo "        <!-- JS here -->
         <script src=\"";
-        // line 119
+        // line 31
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/vendor/modernizr-3.5.0.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 120
+        // line 32
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/vendor/jquery-1.12.4.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 121
+        // line 33
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/popper.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 122
+        // line 34
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 123
+        // line 35
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/owl.carousel.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 124
+        // line 36
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/isotope.pkgd.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 125
+        // line 37
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/ajax-form.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 126
+        // line 38
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/waypoints.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 127
+        // line 39
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.counterup.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 128
+        // line 40
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/imagesloaded.pkgd.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 129
+        // line 41
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/scrollIt.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 130
+        // line 42
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.scrollUp.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 131
+        // line 43
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/wow.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 132
+        // line 44
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/nice-select.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 133
+        // line 45
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.slicknav.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 134
+        // line 46
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.magnific-popup.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 135
+        // line 47
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/plugins.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 136
+        // line 48
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/gijgo.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 137
+        // line 49
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/contact.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 138
+        // line 50
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.ajaxchimp.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 139
+        // line 51
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.form.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 140
+        // line 52
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.validate.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 141
+        // line 53
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/mail-script.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 142
+        // line 54
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/main.js"), "html", null, true);
         echo "\"></script>
     </body>
@@ -356,7 +269,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 70
+    // line 25
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -366,8 +279,8 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 71
-        echo "        ";
+        // line 26
+        echo "            ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -376,7 +289,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     }
 
-    // line 117
+    // line 29
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -406,7 +319,7 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
 
     public function getDebugInfo()
     {
-        return array (  380 => 117,  370 => 71,  360 => 70,  342 => 6,  323 => 5,  309 => 142,  305 => 141,  301 => 140,  297 => 139,  293 => 138,  289 => 137,  285 => 136,  281 => 135,  277 => 134,  273 => 133,  269 => 132,  265 => 131,  261 => 130,  257 => 129,  253 => 128,  249 => 127,  245 => 126,  241 => 125,  237 => 124,  233 => 123,  229 => 122,  225 => 121,  221 => 120,  217 => 119,  214 => 118,  212 => 117,  165 => 72,  163 => 70,  131 => 41,  106 => 19,  102 => 18,  98 => 17,  94 => 16,  90 => 15,  86 => 14,  82 => 13,  78 => 12,  74 => 11,  70 => 10,  66 => 9,  62 => 8,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  293 => 29,  283 => 26,  273 => 25,  255 => 6,  236 => 5,  222 => 54,  218 => 53,  214 => 52,  210 => 51,  206 => 50,  202 => 49,  198 => 48,  194 => 47,  190 => 46,  186 => 45,  182 => 44,  178 => 43,  174 => 42,  170 => 41,  166 => 40,  162 => 39,  158 => 38,  154 => 37,  150 => 36,  146 => 35,  142 => 34,  138 => 33,  134 => 32,  130 => 31,  127 => 30,  125 => 29,  122 => 28,  119 => 27,  116 => 25,  114 => 24,  106 => 19,  102 => 18,  98 => 17,  94 => 16,  90 => 15,  86 => 14,  82 => 13,  78 => 12,  74 => 11,  70 => 10,  66 => 9,  62 => 8,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -434,99 +347,11 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
     </head>
     <body>
 
-    <!-- header-start -->
-    <header>
-        <div class=\"header-area \">
-            <div id=\"sticky-header\" class=\"main-header-area \">
-                <div class=\"container\">
-                    <div class=\"row align-items-center\">
-                        <div class=\"col-xl-3 col-lg-2\">
-                            <div class=\"logo\">
-                                <a href=\"index.html\">
-                                    <img src=\"img/logo.png\" alt=\"\">
-                                </a>
-                            </div>
-                        </div>
-                        <div class=\"col-xl-6 col-lg-7\">
-                            <div class=\"main-menu   d-none d-lg-block\">
-                                <nav>
-                                    <ul id=\"navigation\">
-                                    {{ navbar }}
-                                        <li><a href=\"#\">blog <i class=\"ti-angle-down\"></i></a>
-                                            <ul class=\"submenu\">
-                                                <li><a href=\"blog.html\">blog</a></li>
-                                                <li><a href=\"single-blog.html\">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class=\"col-xl-3 col-lg-3 d-none d-lg-block\">
-                            <div class=\"search_icon\">
-                                <a href=\"#\">
-                                    <i class=\"ti-search\"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class=\"col-12\">
-                            <div class=\"mobile_menu d-block d-lg-none\"></div>
-                        </div>
-                    </div>
+        {% include \"base/navbar.html.twig\" %}
+            {% block body %}
+            {% endblock %}
+        {% include \"base/footer.html.twig\" %}
 
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
-
-        {% block body %}
-        {% endblock %}
-
-        <!-- footer  -->
-        <footer class=\"footer\">
-                <div class=\"copy-right_text\">
-                    <div class=\"container\">
-                        <div class=\"footer_border\"></div>
-                        <div class=\"row align-items-center\">
-                            <div class=\"col-xl-8 col-md-8\">
-                                <p class=\"copy_right\">
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> by <a href=\"https://colorlib.com\" target=\"_blank\">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                </p>
-                            </div>
-                            <div class=\"col-xl-4 col-md-4\">
-                                <div class=\"socail_links\">
-                                    <ul>
-                                        <li>
-                                            <a href=\"#\">
-                                                <i class=\"ti-facebook\"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"#\">
-                                                <i class=\"ti-twitter-alt\"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"#\">
-                                                <i class=\"fa fa-dribbble\"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=\"#\">
-                                                <i class=\"fa fa-behance\"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        <!--/ footer  -->
         {% block javascripts %}{% endblock %}
         <!-- JS here -->
         <script src=\"{{ asset('js/vendor/modernizr-3.5.0.min.js') }}\"></script>
