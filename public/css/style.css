@@ -4215,6 +4215,11 @@ h3 {
   margin-bottom: 80px;
 }
 
+.single_recepie_cadre {
+  border: 2px solid red;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 767px) {
   /* line 26, ../../Arafath/CL/CL October/220 Tasty Recipes/HTML/scss/_recepie.scss */
   .recepie_area.plus_padding .single_recepie {
@@ -4271,7 +4276,6 @@ h3 {
 .recepie_area .single_recepie .recepie_thumb {
   max-width: 300px;
   max-height: 300px;
-  border-radius: 50%;
   overflow: hidden;
   margin: auto;
 }

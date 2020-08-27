@@ -92,7 +92,7 @@ class __TwigTemplate_8dd087108a08b83206cfc2a4ef81e8c08786a791b366369f560c91ee58a
             <div class=\"row\">
                 <div class=\"col-xl-12\">
                     <div class=\"bradcam_text text-center\">
-                        <h3>Chicken Recipes</h3>
+                        <h3>Recettes</h3>
                     </div>
                 </div>
             </div>
@@ -104,18 +104,33 @@ class __TwigTemplate_8dd087108a08b83206cfc2a4ef81e8c08786a791b366369f560c91ee58a
     <div class=\"recepie_area plus_padding\">
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-xl-4 col-lg-4 col-md-6\">
-                    <div class=\"single_recepie text-center\">
-                        <div class=\"recepie_thumb\">
-                            <img src=\"img/recepie/recpie_1.png\" alt=\"\">
+                ";
+        // line 25
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["recipes"]) || array_key_exists("recipes", $context) ? $context["recipes"] : (function () { throw new RuntimeError('Variable "recipes" does not exist.', 25, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+            // line 26
+            echo "                    <div class=\"col-xl-4 col-lg-4 col-md-6 single_recepie_cadre\">
+                        <div class=\"single_recepie text-center\">
+                            <div class=\"recepie_thumb\">
+                                <img src=\"";
+            // line 29
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "image", [], "any", false, false, false, 29), "html", null, true);
+            echo "\" alt=\"\">
+                            </div>
+                            <h3>";
+            // line 31
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["item"], "title", [], "any", false, false, false, 31), "html", null, true);
+            echo "</h3>
                         </div>
-                        <h3>Egg Manchurian</h3>
-                        <span>Appetizer</span>
-                        <p>Time Needs: 30 Mins</p>
-                        <a href=\"#\" class=\"line_btn\">View Full Recipe</a>
                     </div>
-                </div>
-            </div>
+                ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 35
+        echo "            </div>
         </div>
     </div>
     <!-- /recepie_area_start  -->
@@ -140,7 +155,7 @@ class __TwigTemplate_8dd087108a08b83206cfc2a4ef81e8c08786a791b366369f560c91ee58a
 
     public function getDebugInfo()
     {
-        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  133 => 35,  123 => 31,  118 => 29,  113 => 26,  109 => 25,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -157,7 +172,7 @@ class __TwigTemplate_8dd087108a08b83206cfc2a4ef81e8c08786a791b366369f560c91ee58a
             <div class=\"row\">
                 <div class=\"col-xl-12\">
                     <div class=\"bradcam_text text-center\">
-                        <h3>Chicken Recipes</h3>
+                        <h3>Recettes</h3>
                     </div>
                 </div>
             </div>
@@ -169,17 +184,16 @@ class __TwigTemplate_8dd087108a08b83206cfc2a4ef81e8c08786a791b366369f560c91ee58a
     <div class=\"recepie_area plus_padding\">
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-xl-4 col-lg-4 col-md-6\">
-                    <div class=\"single_recepie text-center\">
-                        <div class=\"recepie_thumb\">
-                            <img src=\"img/recepie/recpie_1.png\" alt=\"\">
+                {% for item in recipes %}
+                    <div class=\"col-xl-4 col-lg-4 col-md-6 single_recepie_cadre\">
+                        <div class=\"single_recepie text-center\">
+                            <div class=\"recepie_thumb\">
+                                <img src=\"{{ item.image }}\" alt=\"\">
+                            </div>
+                            <h3>{{ item.title }}</h3>
                         </div>
-                        <h3>Egg Manchurian</h3>
-                        <span>Appetizer</span>
-                        <p>Time Needs: 30 Mins</p>
-                        <a href=\"#\" class=\"line_btn\">View Full Recipe</a>
                     </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
